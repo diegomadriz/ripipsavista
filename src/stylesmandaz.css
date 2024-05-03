@@ -1,0 +1,143 @@
+/* NAVBAR */
+body, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #285ba7, #214a88); /* Fondo azul con gradiente */
+    color: white;
+    padding: 10px -10px 10px 10px;
+    font-weight: bold;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 1rem;
+    margin-left: 7rem;
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+.brand-title {
+    font-size: 1.8rem; /* Aumentar el tamaño del texto */
+    margin: 0;
+    font-weight: bold;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    font-size: 1.2rem;
+    position: relative;
+    flex-grow: 1;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: white; /* Texto blanco */
+    padding: 30px 30px 30px 30px;
+    display: flex; /* Cambiar a flex */
+    align-items: center; /* Centrar el contenido verticalmente */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.navbar-links-button {
+    margin: 10px;
+    border-radius: 8px;/* Ocultar el botón en pantallas grandes */
+}
+
+.navbar-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco translúcido en hover */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* HOMEPAGE */
+
+body {
+    background-color: #E6F7FF; /* Fondo claro similar a las demás páginas */
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left-content, .right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left-content {
+    margin-top: 60px;
+    margin-left: 50px; /* Aumenta el margen izquierdo para desplazar hacia la derecha */
+}
+
+.left-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; /* Aumenta el tamaño del título */
+    color: #003366; /* Color azul oscuro */
+}
+
+.left-content p {
+    margin-top: 10px;
+    font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    font-family: 'Roboto', sans-serif;
+    color: #285ba7; /* Color azul */
+}
+
+.small-logo {
+    height: auto;
+    margin-top: 20px; /* Añadir margen superior */
+}
+
+.custom-btn {
+    display: inline-block;
+    background: linear-gradient(145deg, #497faf, #193d70); /* Similar a los otros botones */
+    color: #FFF; /* Texto blanco */
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-radius: 8px; /* Bordes más definidos */
+    padding: 15px 25px; /* Ajustar el padding */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.custom-btn:hover {
+    background: linear-gradient(145deg, #285ba7, #214a88); /* Cambiar el gradiente en hover */
+    transform: translateY(-3px); /* Efecto de flotación */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0)
+}
