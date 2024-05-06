@@ -1,0 +1,111 @@
+/* Fondo elegante azul marino */
+.login-page {
+    background: linear-gradient(145deg, #001f3f, #00152a); /* Degradado de azul marino */
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-page form {
+    width: 450px;
+    padding: 30px;
+    border: none; /* Sin borde */
+    border-radius: 10px;
+    background: linear-gradient(145deg, #2a2d3b, #1d1f2a); /* Degradado azul marino */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más oscura */
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+legend {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff; /* Texto blanco */
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-xlarge {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #3a3f50; /* Borde gris oscuro */
+    background-color: #2a2d3b; /* Fondo azul marino oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-size: 1.1em;
+    width: 100%;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.input-xlarge:focus {
+    border-color: #007BFF; /* Cambiar color de borde al enfocarse */
+    background-color: #3a3f50; /* Fondo gris más claro al enfocarse */
+}
+
+/* Botón de iniciar sesión */
+button[type="submit"] {
+    padding: 18px 25px;
+    font-size: 1.2em;
+    color: #fff;
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Degradado azul brillante */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(145deg, #0056b3, #003f7f); /* Fondo azul más oscuro en hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de crear cuenta nueva */
+#register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#register-link button {
+    padding: 18px 25px;
+    font-size: 1.2em;
+    background: linear-gradient(145deg, #2ecc71, #27ae60); /* Degradado verde */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+#register-link button:hover {
+    background: linear-gradient(145deg, #27ae60, #1e8449); /* Fondo verde más oscuro en hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}

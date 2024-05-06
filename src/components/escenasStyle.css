@@ -1,0 +1,88 @@
+/* Contenedor principal */
+.escenas-guardadas {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+
+/* Encabezado de la lista */
+.list-container-heading {
+    font-size: 1.8em; /* Tamaño del texto */
+    color: #003366; /* Color azul oscuro */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Contenedor de cada elemento de la lista */
+.list-item {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.7); /* Borde entre elementos */
+    margin-bottom: 15px; /* Espaciado inferior */
+    padding-bottom: 15px; /* Espacio interno */
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+/* Contenedor de cada escena */
+.escenas-container {
+    display: flex; /* Para alinear el botón a la derecha */
+    justify-content: space-between; /* Distribuir el contenido */
+    align-items: center; /* Centrar verticalmente */
+    padding: 10px; /* Espacio interno */
+    height: 120px; /* Altura */
+    background: #e8f1fc; /* Fondo gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Título de cada escena */
+.escenas-title {
+    font-size: 1.6em; /* Tamaño del texto */
+    color: #003366; /* Color azul oscuro */
+    margin: 0; /* Sin margen */
+}
+
+/* Botón para cargar escena */
+.select-escena-button {
+    background: #007BFF; /* Fondo azul */
+    color: #FFF; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Manita al pasar el cursor */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.select-escena-button:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+    transform: translateY(-2px); /* Efecto de flotación */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+    margin-left: 5px; /* Espacio entre botones */
+
+}
+
+/* Botón para ARdeployer */
+.ar-deployer-button {
+    background: #28A745; /* Fondo verde */
+    color: #FFF; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Manita al pasar el cursor */
+    transition: all 0.3s ease; /* Transición suave */
+    margin-left: 5px; /* Espacio entre botones */
+}
+
+.ar-deployer-button:hover {
+    background-color: #218838; /* Verde más oscuro en hover */
+    transform: translateY(-2px); /* Efecto de flotación */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+.escena-list-container {
+    width: 100%;
+    height: 100%;
+}

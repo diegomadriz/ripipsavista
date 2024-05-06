@@ -14,6 +14,7 @@ const Navbar = () => {
                 <ul>
                     <li className="navbar-links-button"><Link to="/Home">Inicio</Link></li>
                     <li className="navbar-links-button"><Link to="/menuAR">Realidad Aumentada</Link></li>
+                    <li className="navbar-links-button"><Link to="/escenasGuardadas">Escenas Guardadas</Link></li>
                 </ul>
             </div>
         </nav>

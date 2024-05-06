@@ -81,45 +81,45 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
     text-align: center;
 }
 
-.content {
+.button-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+    gap: 1rem; /* Ajusta el espacio entre los botones */
+    justify-content: center; /* Centrar los botones horizontalmente */
+    margin-top: 20px; /* Añadir margen superior */
 }
 
-.left-content, .right-content {
+
+.content {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+.welcome-section, .carousel-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 5.5rem; /* Espaciado entre secciones */
 }
 
-.left-content {
-    margin-top: 60px;
-    margin-left: 50px; /* Aumenta el margen izquierdo para desplazar hacia la derecha */
-}
-
-.left-content h1 {
+.welcome-section h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 3rem; /* Aumenta el tamaño del título */
     color: #003366; /* Color azul oscuro */
 }
 
-.left-content p {
+.welcome-section p {
     margin-top: 10px;
-    font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    font-size: 1.3rem; /* Ajusta el tamaño del texto */
     font-family: 'Roboto', sans-serif;
     color: #285ba7; /* Color azul */
-}
-
-.small-logo {
-    height: auto;
-    margin-top: 20px; /* Añadir margen superior */
 }
 
 .custom-btn {
@@ -129,7 +129,6 @@ body {
     text-decoration: none;
     font-size: 1.3rem;
     margin-top: 30px;
-    margin-bottom: 60px;
     border-radius: 8px; /* Bordes más definidos */
     padding: 15px 25px; /* Ajustar el padding */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
@@ -139,5 +138,5 @@ body {
 .custom-btn:hover {
     background: linear-gradient(145deg, #285ba7, #214a88); /* Cambiar el gradiente en hover */
     transform: translateY(-3px); /* Efecto de flotación */
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0)
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4); /* Aumentar la sombra */
 }
