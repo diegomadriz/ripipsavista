@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 // Configura la URL base para todas las solicitudes
-const API_URL = 'http://192.168.1.99:3001';
+const API_URL = 'http://192.168.100.241:3001';
+
+
 
 // Obtener todos los EscenaObjetos
 const getEscenaObjetos = async () => {
@@ -9,7 +11,6 @@ const getEscenaObjetos = async () => {
     console.log(response.data);
     return response.data;
 };
-
 
 // Crear un EscenaObjeto
 const createEscenaObjeto = async (escena_id, objeto_id, position, scale, rotation) => {
@@ -22,10 +23,11 @@ const createEscenaObjeto = async (escena_id, objeto_id, position, scale, rotatio
 
 const createEscena = async (usuario_id, descripcion) => {
     try {
-        const response = await axios.post(`${API_URL}/escena`, { usuario_id, descripcion });
-        return response.data.newEscenaID; // Devuelve el ID directamente
+        console.log("Enviando datos para crear escena:", { usuario_id, descripcion });
+        const response = await axios.post(`${API_URL}/escenas`, { usuario_id, descripcion });
+        return response.data.newEscenaID;
     } catch (error) {
-        console.error('Error al crear la escena:', error);
+        console.error('Error al crear la escena:', error.response ? error.response.data : error.message);
         throw error;
     }
 };
@@ -92,7 +94,7 @@ async function getEscenasPorUsuarioId(usuarioId) {
 // htmlUpdater
 const githubUsername = 'PedroRdlPG';
 const githubRepo = 'ar-scene';
-const githubToken = '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';
+const githubToken = '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';
 
 async function getRepoContents(path) {
     try {

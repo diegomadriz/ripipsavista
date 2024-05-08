@@ -190,7 +190,7 @@ function ARpageFunctionality() {
     const [htmlContent, setHtmlContent] = useState('');
     const [showButton, setShowButton] = useState(false);
 
-    const userId = parseInt(localStorage.getItem('userId'));
+    const usuario_id = parseInt(localStorage.getItem('userId'));
 
     useEffect(() => {
         if (htmlContent) {
@@ -260,15 +260,19 @@ function ARpageFunctionality() {
     async function saveHandleClick(event) {
         event.preventDefault();
         console.log('Saving AR Scene');
-        const descripcionbuilder = 'Escena con' + selectedObjectsList.map((obj) => obj.title).join(', ');
+        const descripcion = 'Escena con ' + selectedObjectsList.map((obj) => obj.title).join(', ');
+        console.log('descripcion: ' + descripcion);
+        console.log('usuario_id:' + usuario_id);
 
         try {
-            const newEscenaID = await createEscena(userId, descripcionbuilder);
+            const newEscenaID = await createEscena(parseInt(usuario_id), descripcion);
+            console.log(newEscenaID);
             for (let i = 0; i < selectedObjectsList.length; i++) {
                 try {
-                    await createEscenaObjeto(newEscenaID, selectedObjectsList[i].id, `0 ${i + 1} -1.5`,
+                    const response = await createEscenaObjeto(newEscenaID, selectedObjectsList[i].id, `0 ${i + 1} -1.5`,
                         `${selectedObjectsList[i].scaleX} ${selectedObjectsList[i].scaleY} ${selectedObjectsList[i].scaleZ}`, '0 0 0');
-                    alert('Escena guardada con descripcion: ' + descripcionbuilder);
+                    console.log(response);
+                    alert('Escena guardada con descripcion: ' + descripcion);
                 } catch (error) {
                     console.error('Error creando EscenaObjeto:', error);
                 }
